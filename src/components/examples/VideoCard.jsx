@@ -39,7 +39,7 @@ export const VideoCard = ({ src, poster }) => {
           !isPlaying ? "opacity-100 group-hover:opacity-100" : "opacity-0",
         )}
       >
-        {!isPlaying && <img src={Play} className="w-14 h-14" />}
+        {!isPlaying && <img src={Play} className="w-14 h-14" alt="Кнопка проигрывателя" />}
       </div>
     </div>
   );

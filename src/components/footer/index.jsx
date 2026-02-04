@@ -10,16 +10,16 @@ export const Footer = () => {
         <div>
           <div className="uppercase">Як з нами зв'язатись?</div>
           <div className="flex gap-4 mt-4">
-            <a href="http://t.me/manager_vlad_spogady" target="_blank">
+            <a href="http://t.me/manager_vlad_spogady" target="_blank" rel="noreferrer">
               <Telegram className="w-8 h-8 cursor-pointer" />
             </a>
             <a
               href="https://www.instagram.com/zhyvi.spohady?igsh=MTZ1c25tYXJ4Ym95OA=="
-              target="_blank"
+              target="_blank" rel="noreferrer"
             >
               <Instagram className="w-8 h-8 cursor-pointer" />
             </a>
-            <a href="viber://chat?number=%2B380998783497" target="_blank">
+            <a href="viber://chat?number=%2B380998783497" target="_blank" rel="noreferrer">
               <Viber className="w-8 h-8 cursor-pointer" />
             </a>
           </div>
