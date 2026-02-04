@@ -1,0 +1,8 @@
+.camera {
+  fill: #fca311;
+  stroke: white;
+  border: white;
+}
+.play {
+  stroke: currentColor;
+}

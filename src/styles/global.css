@@ -1,0 +1,57 @@
+/* @import "tailwindcss"; */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #2b2d42;
+}
+
+/* h1 {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+.navi {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  transform: translateY(4px);
+}
+
+.logo{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: italic;
+}
+
+@theme inline {
+  --color-big-stone: #14213d;
+  --color-ebony-clay: #2b2d42;
+  /* --color-dodger-blue: #073baa9a; */
+  --color-dodger-blue: #073baa9a;
+  --color-sun: #fca311;
+  --color-serenade: #fff7ea;
+  --color-smth: rgba(35, 51, 83, 0.779);
+  --color-bgrnd: rgba(128, 128, 128, 0.604);
+  --color-details: #fcac2d52;
+}
+
+@layer utilities {
+  .bg-main-gradient {
+    background: linear-gradient(135deg, #fff4e0, #fde3b0, #facc78);
+  }
+}
+
+blue {
+  color: #fcac2d52;
+}
