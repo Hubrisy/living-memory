@@ -2,9 +2,13 @@ import clsx from "clsx";
 import { useModalContext } from "../../context/ModalUseContext";
 import { ReactComponent as CloseBtn } from "../../assets/imgs/icons/close.svg";
 import "./styled.css";
+import { useState } from "react";
 
 export const MainForm = () => {
   const { isModal, setIsModal } = useModalContext();
+  const [messanger, setMessanger] = useState("");
+
+  console.log(messanger);
 
   return (
     <div
@@ -82,6 +86,7 @@ export const MainForm = () => {
               name="messanger"
               defaultValue=""
               className="bg-smth rounded-md mt-2 p-2"
+              onChange={(e) => setMessanger(e.target.value)}
               required
             >
               <option value="" disabled className="text-white">
@@ -91,6 +96,21 @@ export const MainForm = () => {
               <option value="Viber">Viber</option>
               <option value="WhatsApp">WhatsApp</option>
             </select>
+          </div>
+          <div
+            className={clsx(
+              messanger === "Telegram" ? "flex" : "hidden",
+              "flex-col mt-2",
+            )}
+          >
+            <label>Ваш нікнейм в телеграмі</label>
+            <input
+              type="text"
+              name="nickname"
+              className="bg-smth rounded-md mt-2 p-2"
+              placeholder="@name"
+              required={messanger === "Telegram"}
+            />
           </div>
           <div className="mt-8 flex justify-center">
             <button

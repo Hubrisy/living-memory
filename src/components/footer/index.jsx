@@ -10,16 +10,25 @@ export const Footer = () => {
         <div>
           <div className="uppercase">Як з нами зв'язатись?</div>
           <div className="flex gap-4 mt-4">
-            <a href="http://t.me/manager_vlad_spogady" target="_blank" rel="noreferrer">
+            <a
+              href="http://t.me/manager_vlad_spogady"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Telegram className="w-8 h-8 cursor-pointer" />
             </a>
             <a
-              href="https://www.instagram.com/zhyvi.spohady?igsh=MTZ1c25tYXJ4Ym95OA=="
-              target="_blank" rel="noreferrer"
+              href="https://www.instagram.com/zhyvi.spohady?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank"
+              rel="noreferrer"
             >
               <Instagram className="w-8 h-8 cursor-pointer" />
             </a>
-            <a href="viber://chat?number=%2B380998783497" target="_blank" rel="noreferrer">
+            <a
+              href="viber://chat?number=%2B380998783497"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Viber className="w-8 h-8 cursor-pointer" />
             </a>
           </div>
@@ -46,7 +55,9 @@ export const Footer = () => {
           </div>
           <div className="mt-6">
             <div className="h-px w-full bg-gray-500" />
-            <div className="mt-4">2026 live-memories.dinowaw.site | Усі права захищені.</div>
+            <div className="mt-4">
+              2026 live-memories.vercel.app | Усі права захищені.
+            </div>
           </div>
         </div>
       </div>
